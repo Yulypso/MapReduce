@@ -42,8 +42,8 @@ __Run the code__
 > cd Project/TotalProfit
 
 # mapper
-> cat sample.txt | python3 mapper.py
+> python3 mapper.py
 
 # mapper + reducer
-> cat sample.txt | python3 mapper.py | python3 reducer.py
+> python3 mapper.py | python3 reducer.py
 ```
