@@ -12,17 +12,38 @@ __Setup__
 ```bash
 > git clone https://github.com/Yulypso/MapReduce.git
 > cd MapReduce
+
+# for MacOs/Linux
+> source .venv/bin/activate
+
+#for Windows
+> py -3 -m venv .venv
+> .venv\scripts\activate
+
+# to install requirements 
+> pip3 install -r requirements.txt
 ```
 
 __Run the code__
 
 **WordCount**
 ```bash
-> cd WordCount
+> cd Project/WordCount
 
 # mapper
-> cat sample.txt | python mapper.py
+> cat sample.txt | python3 mapper.py
 
 # mapper + reducer
-> cat sample.txt | python mapper.py | python reducer.py
+> cat sample.txt | python3 mapper.py | python3 reducer.py
+```
+
+**TotalProfit/Countries**
+```bash
+> cd Project/TotalProfit
+
+# mapper
+> cat sample.txt | python3 mapper.py
+
+# mapper + reducer
+> cat sample.txt | python3 mapper.py | python3 reducer.py
 ```
