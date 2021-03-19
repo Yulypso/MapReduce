@@ -47,3 +47,14 @@ __Run the code__
 # mapper + reducer
 > python3 mapper.py | python3 reducer.py
 ```
+
+**TotalProfit Mean from TotalProfit/Countries**
+```bash
+> cd Project/TotalProfit
+
+# mapper
+> python3 mapper.py | python3 reducer.py | python3 TotalProfitMean/mapper.py
+
+# reducer
+> python3 mapper.py | python3 reducer.py | python3 TotalProfitMean/mapper.py | python3 TotalProfitMean/reducer.py
+```
